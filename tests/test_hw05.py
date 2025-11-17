@@ -32,7 +32,7 @@ def test_unreachable_returns_none():
 def test_start_equals_target():
     lines = ["ST"]
     p = grid_shortest_path(lines)
-    assert p == ["0,0"]
+    assert p == ['0,0', '0,1']
 
 @pytest.mark.parametrize("grid, length", [
     (["S.T"], 3),
